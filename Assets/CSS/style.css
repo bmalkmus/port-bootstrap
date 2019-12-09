@@ -16,6 +16,8 @@
 .context {
     background-color: #ffffff;
     border: #dddddd solid 1px;
+    padding: 5px;
+
 }
 .header-link{
     background-color: #ffffff;
@@ -55,3 +57,32 @@ form {
     color:#777777;
 }
 
+.projects {
+    height: 200px;
+    width: 200px;
+
+}
+
+#pro1{
+    background-image: url(../../../portfolio/assets/images/pic1.jpg);
+}
+
+#pro2{
+    background-image: url(../../../portfolio/assets/images/pic2.jpg);
+}
+
+#pro3{
+    background-image: url(../../../portfolio/assets/images/pic3.jpg);
+}
+
+#pro4{
+    background-image: url(../../../portfolio/assets/images/pic4.jpg);
+}
+
+#pro5{
+    background-image: url(../../../portfolio/assets/images/pic5.jpg);
+}
+
+.sample {
+    background-color: blue;
+}
