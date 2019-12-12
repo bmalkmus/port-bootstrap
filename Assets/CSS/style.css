@@ -42,10 +42,6 @@ font-family:'Georgia', Times, 'Times New Roman', serif;
 color: #4aaaa5;
 }
 
-.navbar {
-    background-color: #ffffff
-}
-
 .contact-button {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -57,13 +53,30 @@ form {
     color:#777777;
 }
 
+#picture {
+    margin: auto;
+}
+
+.top-buffer{
+    margin-top: 20px;
+}
+
 .projects {
     height: 200px;
     width: 200px;
     margin: auto;
-
-
+    text-align: center;
 }
+
+.project-title {
+    position: relative;
+    top:100px;
+    box-sizing: border-box;
+    width:100%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
 
 #pro1{
     background-image: url(../../../portfolio/assets/images/pic1.jpg);
@@ -85,6 +98,28 @@ form {
     background-image: url(../../../portfolio/assets/images/pic5.jpg);
 }
 
-.sample {
-    background-color: blue;
+@media (max-width:768px) {
+    .name {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+footer {
+    
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    Width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+}
+
+.footer23 {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 8px
+    color #ffffff;
+    text-align: center;
 }
