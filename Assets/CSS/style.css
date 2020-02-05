@@ -42,6 +42,10 @@ font-family:'Georgia', Times, 'Times New Roman', serif;
 color: #4aaaa5;
 }
 
+.profilePic {
+    border-radius: 50%;
+}
+
 .contact-button {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -79,15 +83,18 @@ form {
 
 
 #pro1{
-    background-image: url(../../../portfolio/assets/images/pic1.jpg);
+    background-image: url(../images/ParkApp.png);
+    background-size: cover;
 }
 
 #pro2{
-    background-image: url(../../../portfolio/assets/images/pic2.jpg);
+    background-image: url(../images/WorkdayPlan.png);
+    background-size: cover;
 }
 
 #pro3{
-    background-image: url(../../../portfolio/assets/images/pic3.jpg);
+    background-image: url(../images/WeatherApp.png);
+    background-size: cover;
 }
 
 #pro4{
