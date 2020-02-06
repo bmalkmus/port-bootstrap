@@ -48,11 +48,20 @@ $(".projects").click(function(){
     //       $(proDiv).css('display',"none")
     //     }})
 
-          $(close).click(function() {
-              console.log("click");
-            $(proDiv).css('display', 'none');
-          })
-        })
+    $(close).click(function() {
+        $(proDiv).css('display', 'none');
+    })
+})
+
+$('#submitMail').click(function(event){
+    console.log("click");
+        event.preventDefault();
+        let email = "benjamin.malkmus@outlook.com";
+        var subject = $('#subjectName').label + "  " + $('#subjectAdd') ;
+        var emailBody = $('#mailbody').label;
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+
+})
 
 
 
