@@ -41,12 +41,12 @@ $('document').ready(function(){
             backgroundColor: "#af9879",
         })
         $(".context").prepend(proDiv);
-        $('.projects').css("display", "none");
+        $('.projects').css("visibility", "hidden");
         $('footer').css("display", "none");
 
         $(close).click(function() {
             $(proDiv).css('display', 'none');
-            $('.projects').css('display', 'inline-block');
+            $('.projects').css('visibility', 'visible');
             $('footer').css("display", "block");
         })
     })
