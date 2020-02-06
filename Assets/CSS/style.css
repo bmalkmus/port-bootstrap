@@ -46,6 +46,10 @@ color: #4aaaa5;
     border-radius: 50%;
 }
 
+.popUp {
+    text-align: center;
+}
+
 .contact-button {
     background-color: #4aaaa5;
     color: #ffffff;
@@ -98,7 +102,8 @@ form {
 }
 
 #pro4{
-    background-image: url(../../../portfolio/assets/images/pic4.jpg);
+    background-image: url(../images/Quiz.png);
+    background-size: cover;
 }
 
 #pro5{

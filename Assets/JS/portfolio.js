@@ -1,29 +1,59 @@
 
-
+let proDiv
 
 
 $(".projects").click(function(){
-
-    let proDiv = $("<div>");
-    let title = $("<h2>").text(this.id);
-    let screenshot = $('<img>').attr("src",this.dataset.screen);
-    console.log(this.dataset.screen)
-    let github = $('<a>').attr("href", this.dataset.deployed);
-    $(github).html('Github Deployment')
-    let repo = $('<a>').attr("href", this.dataset.repo);
+    $(proDiv).empty();
+    proDiv = $("<div>");
+    $(proDiv).addClass("popUp");
+    let title = $("<h2>").text(this.p);
+    let screenshot = $('<img>').attr({
+        src: this.dataset.screen,
+        width: '700px',
+        height: '400px'
+    });
+    let github = $('<a>').attr({href: this.dataset.deployed, target: "_blank"});
+    $(github).html('GitHub Deployment')
+    let gitHubP = $('<p>');
+    let repoP = $("<p>");
+    let repo = $('<a>').attr({href: this.dataset.repo, target: "_blank"});
     $(repo).html('GitHub Repository');
     let close = $('<span>').html("&times;");
     $(close).addClass("close");
     $(proDiv).append(close);
     $(proDiv).append(title);
     $(proDiv).append(screenshot);
-    $(proDiv).append(github);
-    $(proDiv).append(repo);
+    $(gitHubP).append(github);
+    $(repoP).append(repo);
+    $(proDiv).append(repoP);
+    $(proDiv).append(gitHubP);
+    proDiv.css({
+        display: "inline-block",
+        position: 'fixed',
+        zIndex: '1',
+        // paddingTop: '100px',
+        width: '800px',
+        height: '80%',
+        overflow: 'auto',
+        border: 'solid 3px black',
+        backgroundColor: "White",
+    })
     $(".context").prepend(proDiv);
-    proDiv.attr("display", "block")
+    $('.projectRow').attr("display", "none");
+    // $(window).click(function(event) {
+    //     // console.log(event.target.class);
+    //     // console.log($('.popUp'));
+    //     if (this == $(proDiv)) {
+    //         console.log("click")
+    //       $(proDiv).css('display',"none")
+    //     }})
 
+          $(close).click(function() {
+              console.log("click");
+            $(proDiv).css('display', 'none');
+          })
+        })
 
-})
 
 
 
